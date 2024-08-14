@@ -1,0 +1,70 @@
+<!--index.html-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>To_Do_List</title>
+   <style>
+      div {
+         margin-bottom: 10px;
+         width: 100%;
+      }
+      input,textarea,select{
+         width: 100%;
+
+      }
+      .law{
+         background-color: rgb(178, 178, 221);
+         display: flex;
+
+      height: 20px;
+      }
+   </style>
+</head>
+
+<body>
+   <div style="width: 48%; float: left;" >
+      <form>
+         <div>
+
+            <div>
+               <input id="txtTaskName" placeholder="Task Name" />
+            </div>
+
+            <div>
+               <select id="ddlperiority">
+                  <option value="">select</option>
+                  <option value="low">low</option>
+                  <option value="medim">medim</option>
+                  <option value="high">high</option>
+                  <option value="highest">highest</option>
+
+               </select>
+            </div>
+            <div>
+               <input id="txtDate" type="date" />
+            </div>
+
+            <div>
+               <textarea id="txtDescription" placeholder="Task Description"></textarea>
+            </div>
+         </div>
+         <div>
+            <button type="button" onclick="ToDoList.SaveTask()">Save</button>
+         </div>
+      </form>
+   </div>
+
+   <div  id="TaskContainer" style="width: 48%; float: left;" >
+
+   </div>
+  
+   
+   </div>
+   
+   <script src="index.js"></script>
+</body>
+
+</html>
